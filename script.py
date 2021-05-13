@@ -1,9 +1,9 @@
 class script(object):
 
 
-    START_MSG = """ <b>Hi {}
+    START_MSG = """ <b>Hi {}!!
 
-😔 Sorry, This Bot Is Officially Made For Cinema Festival Group"""
+I am a group manager bot. 😐But don't waste your time here, you can only use me in the request group .."""
 
 
     HELP_MSG = """<b>How to use the bot??</b>
