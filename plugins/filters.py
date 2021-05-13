@@ -78,7 +78,8 @@ async def filter(client: Bot, message: Message):
         )
 
         await message.reply_text(
-                f"<b> Here is the result for {message.text} ➠Cʜᴀɴɴᴇʟ : @cinema_festivals</b>",
+                f"<b> Here is the result for {message.text}
+                  ➠Cʜᴀɴɴᴇʟ : @cinema_festivals</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
