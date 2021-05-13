@@ -3,7 +3,7 @@ class script(object):
 
     START_MSG = """ <b>Hi {}!!
 
-I am a group manager bot. 😐But don't waste your time here, you can only use me in the request group .."""
+I am a group manager bot. 😐But don't waste your time here, you can only use me in the request group ..</b>"""
 
 
     HELP_MSG = """<b>How to use the bot??</b>
