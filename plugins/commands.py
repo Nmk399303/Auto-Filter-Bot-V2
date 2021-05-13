@@ -17,12 +17,12 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("CHANNEL", url="https://t.me/joinchat/OAdXSs8fTHk1ZjY9"),
-                        InlineKeyboardButton("GROUP", url="https://t.me/joinchat/MYyL5XtjNlhiMWI9"),
+                        InlineKeyboardButton("CHANNEL", url="https://t.me/joinchat/KBsZVTczo69lOGM0"),
+                        InlineKeyboardButton("GROUP", url="https://t.me/joinchat/SvKwgBUA_RzHoNd6"),
                     ],
                     [
                         InlineKeyboardButton(
-                            "⭕️ MAIN CHANNEL ⭕️", url="https://t.me/joinchat/0kK64lcIk7I1NDE1")
+                            "MAIN CHANNEL ✔️", url="https://t.me/joinchat/d8gbo7WMFKQ3NzRl")
                     ]
                 ]
             ),
