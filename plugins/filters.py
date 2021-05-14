@@ -64,8 +64,8 @@ async def filter(client: Bot, message: Message):
                 [InlineKeyboardButton(text="📜 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-               f"<b> ➠Cʜᴀɴɴᴇʟ : @TAMILROKERS12"
-                "\nHere is the result for {message.text}" 
+                "<b> ➠Cʜᴀɴɴᴇʟ : @TAMILROKERS12"
+                "\nHere is the result for f"{message.text}" 
                 "\n📌 താഴെ കാണുന്ന ജോയിൻ ചാനലിൽ ക്ലിക്ക് ചെയ്‌തതിനു ശേഷം മാത്രം മൂവി ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക 👇👇👇</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
@@ -82,8 +82,8 @@ async def filter(client: Bot, message: Message):
         )
 
         await message.reply_text(
-                f"<b> ➠Cʜᴀɴɴᴇʟ : @TAMILROKERS12"
-                "\nHere is the result for {message.text}" 
+                "<b> ➠Cʜᴀɴɴᴇʟ : @TAMILROKERS12"
+                "\nHere is the result for f"{message.text}" 
                 "\n📌 താഴെ കാണുന്ന ജോയിൻ ചാനലിൽ ക്ലിക്ക് ചെയ്‌തതിനു ശേഷം മാത്രം മൂവി ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക 👇👇👇</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
