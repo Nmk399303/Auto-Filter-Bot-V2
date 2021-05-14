@@ -83,7 +83,7 @@ async def filter(client: Bot, message: Message):
 
         await message.reply_text(
                 "<b> ➠Cʜᴀɴɴᴇʟ : @TAMILROKERS12"
-                f"\nHere is the result for "{message.text}" 
+                f"\nHere is the result for {message.text}" 
                 "\n📌 താഴെ കാണുന്ന ജോയിൻ ചാനലിൽ ക്ലിക്ക് ചെയ്‌തതിനു ശേഷം മാത്രം മൂവി ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക 👇👇👇</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
