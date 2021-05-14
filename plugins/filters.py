@@ -36,13 +36,13 @@ async def filter(client: Bot, message: Message):
 
         group_id = message.chat.id
         name = message.text
-          btn.append([InlineKeyboardButton("🖤 MAIN CHANNEL 🤍", url="https://t.me/joinchat/d8gbo7WMFKQ3NzRl")]
+          btn.append([InlineKeyboardButton("🎟️MAIN CHANNEL", url="https://t.me/joinchat/d8gbo7WMFKQ3NzRl")]
             )
         filenames, links = await searchquery(group_id, name)
         if filenames and links:
             for filename, link in zip(filenames, links):
                 btn.append(
-                    [InlineKeyboardButton(text=f"📥{filename}",url=f"{link}")]
+                    [InlineKeyboardButton(text=f"📃{filename}",url=f"{link}")]
                 )
         else:
             return
@@ -81,7 +81,8 @@ Here is the result for {message.text}</b>",
 
         await message.reply_text(
                 f"<b> ➠Cʜᴀɴɴᴇʟ : @TAMILROKERS12 
-Here is the result for {message.text}  </b>",
+Here is the result for {message.text} 
+📌 താഴെ കാണുന്ന ജോയിൻ ചാനലിൽ ക്ലിക്ക് ചെയ്‌തതിനു ശേഷം മാത്രം മൂവി ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക 👇👇👇</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
