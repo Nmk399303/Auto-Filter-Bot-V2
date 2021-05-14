@@ -36,8 +36,8 @@ async def filter(client: Bot, message: Message):
 
         group_id = message.chat.id
         name = message.text
-        [InlineKeyboardButton("⭕️ MAIN CHANNEL ⭕️", url="https://t.me/joinchat/d8gbo7WMFKQ3NzRl")]
-            ])
+          btn.append([InlineKeyboardButton("🖤 MAIN CHANNEL 🤍", url="https://t.me/joinchat/d8gbo7WMFKQ3NzRl")]
+            )
         filenames, links = await searchquery(group_id, name)
         if filenames and links:
             for filename, link in zip(filenames, links):
