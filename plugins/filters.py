@@ -39,9 +39,9 @@ async def filter(client: Bot, message: Message):
         btn.append(
             [InlineKeyboardButton("🎟️ JOIN CHANNEL", url="https://t.me/joinchat/xy2tjwLH-a05Y2Jk")]
             )
-        filenames, links, filesizes = await searchquery(group_id, name)
+        filenames, links = await searchquery(group_id, name)
         if filenames and links:
-            for filename, link, filesize in zip(filenames, links, filesizes):
+            for filename, link in zip(filenames, links):
                 btn.append(
                     [InlineKeyboardButton(text=f"📁 {filename}",url=f"{link}")], 
                 )
