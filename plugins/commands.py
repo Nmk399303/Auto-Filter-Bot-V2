@@ -19,11 +19,7 @@ async def start(client, message):
                     [
                         InlineKeyboardButton("CHANNEL", url="https://t.me/joinchat/KBsZVTczo69lOGM0"),
                         InlineKeyboardButton("GROUP", url="https://t.me/joinchat/SvKwgBUA_RzHoNd6"),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            "MAIN CHANNEL ✔️", url="https://t.me/joinchat/d8gbo7WMFKQ3NzRl")
-                    ]
+                    ], 
                 ]
             ),
             reply_to_message_id=message.message_id
