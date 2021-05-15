@@ -181,6 +181,7 @@ async def searchquery(group_id, name):
         filename = file['file_name']
         filenames.append(filename)
         filesize = file['file_size']
+        filesize = str(file['file_size']//1048576) 
         filesizes.append(filesize) 
         filelink = file['link']
         filelinks.append(filelink)
