@@ -188,7 +188,7 @@ async def searchquery(group_id, name):
                 file_size = f"[{str(round(file_size/(1024**2), 2))} MiB] "
             elif file_size < (1024**4):
                 file_size = f"[{str(round(file_size/(1024**3), 2))} GiB] " 
-        filesize.append(file_size)
+        filesize.append(filesize)
         filelink = file['link']
         filelinks.append(filelink)
     return filenames, filelinks
