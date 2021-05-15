@@ -180,9 +180,7 @@ async def searchquery(group_id, name):
         filename = file['file_name']
         filenames.append(filename)
         filesize = file['file_size']
-        filesize = "if file_size < 1024:
-                file_size = f"[{file_size} B]"
-           " elif file_size < (1024**2):
+        filesize = " elif file_size < (1024**2):
                file_size = f"[{str(round(file_size/1024, 2))} KiB] "
           " elif file_size < (1024**3):
                 file_size = f"[{str(round(file_size/(1024**2), 2))} MiB] "
