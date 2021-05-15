@@ -169,6 +169,7 @@ async def searchquery(group_id, name):
 
     filenames = []
     filelinks = []
+    filesize = [] 
 
     # looking for a better regex :(
     pattern = name.lower().strip().replace(' ','.*')
