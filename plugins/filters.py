@@ -61,9 +61,6 @@ async def filter(client: Bot, message: Message):
             }
         else:
             buttons = btn
-            buttons.append(
-                [InlineKeyboardButton(text="📜 Pages 1/1",callback_data="pages")]
-            )
             await message.reply_text(
                 f"<b> Here Is The Results For Query:</b> <code>{message.text}</code>" 
                  "<b><u>\n\n📌 താഴെ കാണുന്ന ജോയിൻ ചാനലിൽ ക്ലിക്ക് ചെയ്‌തതിനു ശേഷം മാത്രം മൂവി ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക 👇👇👇</u></b>", 
@@ -77,10 +74,6 @@ async def filter(client: Bot, message: Message):
         buttons.append(
             [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
         )    
-        buttons.append(
-            [InlineKeyboardButton(text=f"📜 Pages 1/{data['total']}",callback_data="pages")]
-        )
-
         await message.reply_text(
                 f"<b> Here Is The Results For Query:</b> <code>{message.text}</code>"
                  "<b><u>\n\n📌 താഴെ കാണുന്ന ജോയിൻ ചാനലിൽ ക്ലിക്ക് ചെയ്‌തതിനു ശേഷം മാത്രം മൂവി ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക 👇👇👇</u></b>", 
