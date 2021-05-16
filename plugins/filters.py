@@ -40,7 +40,7 @@ async def filter(client: Bot, message: Message):
             [InlineKeyboardButton("🎟️ JOIN CHANNEL", url="https://t.me/joinchat/xy2tjwLH-a05Y2Jk")]
             )
         filenames, links, filesizes = await searchquery(group_id, name)
-        if filenames, links and filesizes :
+        if filenames and links and filesizes :
             for filename, link, filesize in zip(filenames, links, filesizes):
                 btn.append(
                     [InlineKeyboardButton(text=f"📁 {filename}",url=f"{link}")], 
