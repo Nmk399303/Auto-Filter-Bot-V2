@@ -44,7 +44,7 @@ async def filter(client: Bot, message: Message):
             for filename, link, filesize in zip(filenames, links, filesizes):
                 btn.append(
                     [InlineKeyboardButton(text=f"📁 {filename}",url=f"{link}")], 
-                     [InlineKeyboardButton(text=f"{filesize}",callback_data="pages")]
+                     [InlineKeyboardButton(text=f"{file_size}",callback_data="pages")]
                 )
         else:
             return
