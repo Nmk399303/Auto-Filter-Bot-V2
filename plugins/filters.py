@@ -100,7 +100,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             ident, index, keyword = query.data.split("_")
             data = BUTTONS[keyword]
 
-            if int(index) == int(data["total"]) - 2:
+            if int(index) == int(data["total"]) - 3:
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
