@@ -122,7 +122,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             ident, index, keyword = query.data.split("_")
             data = BUTTONS[keyword] 
 
-            if int(index) == 1:
+            if int(index) == 2:
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
@@ -204,7 +204,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             await query.message.delete()
 
     else:
-        await query.answer("Thats not for you!!",show_alert=True)
+        await query.answer("This button shows how much MB to the file🙂",show_alert=True)
 
 
 def split_list(l, n):
